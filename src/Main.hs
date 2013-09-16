@@ -121,7 +121,7 @@ main = do
     -- Choose one of the Following,
     -- For some reason I can combine withBlockingIO with withDefaults strange...
     
-    withPortAudio withBlockingIO
-    -- withPortAudio (withDefaults >> withCustomSettings)
+    -- withPortAudio withBlockingIO
+    withPortAudio (withDefaults >> withCustomSettings)
     
     return ()
