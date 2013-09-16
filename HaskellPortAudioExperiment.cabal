@@ -19,4 +19,5 @@ Executable HaskellPortAudioExperiment
         pretty       == 1.1.*,
         stm          == 2.4.*,
         transformers == 0.3.*,
-        containers
+        containers,
+        vector
