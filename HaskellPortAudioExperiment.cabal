@@ -1,0 +1,22 @@
+Name:                   HaskellPortAudioExperiment
+Version:                0.0
+Description:            Experiments with Haskell and PortAudio
+License:                GPL
+License-file:           LICENSE
+Author:                 Chad McKinney
+Maintainer:             seppukuzombie@gmail.com
+Build-Type:             Simple
+Cabal-Version:          >=1.2
+Executable HaskellPortAudioExperiment
+    Main-is:            Main.hs
+    hs-source-dirs:     src
+    ghc-options:        -threaded -XFlexibleInstances -XInstanceSigs -XRankNTypes
+    Build-Depends:     
+        base >= 3 && < 5,
+        portaudio    == 0.2.*,
+        base          < 5,
+        mtl          == 2.1.*,
+        pretty       == 1.1.*,
+        stm          == 2.4.*,
+        transformers == 0.3.*,
+        containers
